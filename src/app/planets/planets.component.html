@@ -1,0 +1,20 @@
+<h1 class="text-center">Starwars Planets</h1>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let planet of planetDetails" class="card col-4 pt-2 pb-2">
+        <div class="card-header">
+          <h2>{{ planet.name }}</h2>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">Diameter: {{ planet.diameter }}</li>
+          <li class="list-group-item">Climate: {{ planet.climate }}</li>
+          <li class="list-group-item">Gravity: {{ planet.gravity }}</li>
+          <li class="list-group-item">Terrain: {{ planet.terrain }}</li>
+          <li class="list-group-item">
+            Surface water: {{ planet.surface_water }}
+          </li>
+          <li class="list-group-item">Population: {{ planet.population }}</li>
+        </ul>
+    </div>
+  </div>
+</div>
